@@ -17,32 +17,7 @@ services:
       - mysql
       - phpmyadmin
 
-  mysql:
-      image: mysql:5.7.35
-      volumes: 
-        - db_data:/var/lib/mysql
-      restart: always
-      networks: 
-        - rede
-      environment:
-        MYSQL_ROOT_PASSWORD: "root"
-
-  phpmyadmin:
-    image: phpmyadmin:5
-    restart: always
-    ports: 
-      - "${PHPMYADMIN}:80"
-    networks: 
-      - rede
-    depends_on: 
-      - mysql
-    environment:
-      PMA_HOST: "mysql"
-      PMA_USER: "root"
-      PMA_PASSWORD: "root"
-
 volumes: 
-  db_data:
   node_modules:
 
 networks: 
