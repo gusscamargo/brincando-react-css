@@ -1,5 +1,9 @@
 import type { NextPage } from "next";
 import { useState } from "react";
+import Input from "../components/Input"
+
+
+
 
 const Home: NextPage = () =>{
 
@@ -11,31 +15,28 @@ const Home: NextPage = () =>{
     <div style={{
       backgroundColor: `rgb(${r}, ${g}, ${b})`
     }}>
-      <span>R</span>
-      <input type="range" max="250" value={r}
-        onChange={
-          e => setR(e.target.value)
-        }
-      />
-      <input type="text" value={r} onChange={e => setR(e.target.value)}  />
-      <br />
 
-      <span>G</span>
-      <input type="range" max="250" value={g}
-        onChange={
-          e => setG(e.target.value)
-        }
+      <Input
+        name="R"
+        value={r}
+        set={setR}
       />
-      <input type="text" value={g} onChange={e => setG(e.target.value)} />
       <br />
       
-      <span>B</span>
-      <input type="range" max="250" value={b}
-        onChange={
-          e => setB(e.target.value)
-        }
+      <Input
+        name="G"
+        value={g}
+        set={setG}
       />
-      <input type="text" value={b} onChange={e => setB(e.target.value)} />
+      <br />
+
+      <Input
+        name="B"
+        value={b}
+        set={setB}
+      />
+      <br />
+      
     </div>
   )
 }
