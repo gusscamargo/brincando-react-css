@@ -9,7 +9,7 @@ services:
     ports:
       - "${APP}:3000"
     volumes: 
-      - ./src:/usr/app
+      - ./src/out:/usr/app
       - node_modules:/usr/data
     networks: 
       - rede
