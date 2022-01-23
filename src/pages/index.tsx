@@ -19,6 +19,7 @@ const Home: NextPage = () =>{
       />
       <input type="text" value={r} onChange={e => setR(e.target.value)}  />
       <br />
+
       <span>G</span>
       <input type="range" max="250" value={g}
         onChange={
@@ -27,6 +28,7 @@ const Home: NextPage = () =>{
       />
       <input type="text" value={g} onChange={e => setG(e.target.value)} />
       <br />
+      
       <span>B</span>
       <input type="range" max="250" value={b}
         onChange={
