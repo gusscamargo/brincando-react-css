@@ -13,9 +13,6 @@ services:
       - node_modules:/usr/data
     networks: 
       - rede
-    depends_on:
-      - mysql
-      - phpmyadmin
 
 volumes: 
   node_modules:
