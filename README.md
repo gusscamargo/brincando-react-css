@@ -1,7 +1,14 @@
-# Brincando com react e css
+# Brincando com react e rbg
 
 ## Objetivo
-Brincar com as cores usando RGB
+Brincar com as cores RGB 
+
+## O que o compõe
+1. [Typescript](https://www.typescriptlang.org/)
+2. [ReactJS](https://pt-br.reactjs.org/)
+3. [Next.js](https://nextjs.org/)
+4. [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+5. [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ## Como instalar e inicializar
 
