@@ -2,10 +2,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import Input from "../components/Input"
 
-
-
-
-const Home: NextPage = () =>{
+const Home: NextPage = () => {
 
   const [r, setR] = useState<string>("0")
   const [g, setG] = useState<string>("0")
